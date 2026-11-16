@@ -44,7 +44,7 @@ không gian công cộng.
 
 Báo hành vi lạm dụng, quấy rối hay không chấp nhận được **qua kênh riêng tư của GitHub**, không công khai:
 
-- Dùng <https://github.com/seeker19110/X-Company/security/advisories/new> và ghi rõ "báo cáo vi phạm Quy tắc ứng xử"
+- Dùng <https://github.com/www-donghanhcungban-org/X-Company/security/advisories/new> và ghi rõ "báo cáo vi phạm Quy tắc ứng xử"
   (kênh này riêng tư với chủ dự án), hoặc
 - nhắn trực tiếp tài khoản [@seeker19110](https://github.com/seeker19110) nếu cần; địa chỉ email liên hệ: `<chủ dự án điền nếu muốn công khai>`.
 

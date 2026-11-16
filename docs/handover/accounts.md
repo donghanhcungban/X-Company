@@ -9,7 +9,7 @@ updated: 2026-10-18
 
 | Dịch vụ | Mục đích | Chủ hiện tại | Chủ mới | Ngày chuyển | Ngày xoay bí mật |
 |---|---|---|---|---|---|
-| GitHub repo `seeker19110/X-Company` | mã nguồn, CI, advisories | seeker19110 | `<điền>` | `<điền>` | `<điền>` |
+| GitHub repo `www-donghanhcungban-org/X-Company` | mã nguồn, CI, advisories | seeker19110 | `<điền>` | `<điền>` | `<điền>` |
 | Máy chủ / nhà cung cấp hạ tầng | chạy ứng dụng (PM2) | `<điền>` | `<điền>` | `<điền>` | `<điền>` |
 | PostgreSQL (role ứng dụng, role migration) | dữ liệu | `<điền>` | `<điền>` | `<điền>` | `<điền>` |
 | Kho bí mật | `SESSION_SECRET`, `QR_SIGNING_KEYS`, mật khẩu DB | `<điền>` | `<điền>` | `<điền>` | `<điền>` |

@@ -147,7 +147,7 @@ if (has("CHANGELOG.md")) {
 }
 
 // 6. SECURITY.md + security.txt (BASE-SEC-009, XC-OSS-004, RFC 9116).
-const ADVISORY = "https://github.com/seeker19110/X-Company/security/advisories/new";
+const ADVISORY = "https://github.com/www-donghanhcungban-org/X-Company/security/advisories/new";
 if (has("SECURITY.md")) {
   const s = read("SECURITY.md");
   if (!s.includes(ADVISORY)) fail("SECURITY.md thiếu kênh GitHub Private Vulnerability Reporting");

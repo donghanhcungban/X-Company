@@ -16,7 +16,7 @@ status: nháp — chưa có môi trường production thật; lệnh PM2/psql l�
 | Mục | Giá trị |
 |---|---|
 | Môi trường | dev: máy cá nhân (`npm run dev`) · staging: `<chủ dự án điền>` · production: `<chủ dự án điền>` (tự host, PM2 — ADR-0001) |
-| Repo / nhánh phát hành | <https://github.com/seeker19110/X-Company> · `main` (squash merge, ruleset ở `.github/rulesets/main.json`) |
+| Repo / nhánh phát hành | <https://github.com/www-donghanhcungban-org/X-Company> · `main` (squash merge, ruleset ở `.github/rulesets/main.json`) |
 | Hạ tầng | máy chủ/nhà cung cấp: `<chủ dự án điền>` · IaC: chưa có |
 | Dashboard / log / trace | chưa có — dự kiến T-026/T-038 (log JSON, metric); tạm: `pm2 logs` |
 | Kho bí mật | `<chủ dự án điền: tên kho/đường dẫn>` — KHÔNG ghi giá trị ở đây; biến môi trường mẫu ở `.env.example` |

@@ -7,7 +7,7 @@ Trạng thái: **đang xây P0** (chưa có bản phát hành, chưa có ngườ
 ## Bắt đầu nhanh (clone sạch → test xanh, 3 lệnh)
 
 ```bash
-git clone https://github.com/seeker19110/X-Company.git && cd X-Company
+git clone https://github.com/www-donghanhcungban-org/X-Company.git && cd X-Company
 npm ci
 npm test
 ```

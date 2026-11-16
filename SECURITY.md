@@ -13,7 +13,7 @@ bảng này liệt kê các bản còn được vá.
 
 **Không mở issue, PR hay thảo luận công khai cho lỗ hổng bảo mật.**
 
-1. Mở <https://github.com/seeker19110/X-Company/security/advisories/new> (GitHub Private Vulnerability Reporting).
+1. Mở <https://github.com/www-donghanhcungban-org/X-Company/security/advisories/new> (GitHub Private Vulnerability Reporting).
 2. Mô tả: thành phần/đường dẫn, các bước tái hiện, tác động, phiên bản/commit. Không đính kèm dữ liệu cá nhân thật.
 3. Nếu nút báo cáo không hiện (tính năng chưa được bật): `<chủ dự án bật Settings → Code security → Private vulnerability reporting>`;
    trong lúc đó mở issue công khai **chỉ** với nội dung "cần kênh báo bảo mật", không nêu chi tiết, để chủ dự án liên hệ lại qua GitHub.
