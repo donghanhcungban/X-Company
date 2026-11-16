@@ -42,10 +42,11 @@ for (const f of REQUIRED) if (!has(f)) fail(`thiếu ${f}`);
 const pkg = has("package.json") ? JSON.parse(read("package.json")) : { scripts: {} };
 const scripts = pkg.scripts ?? {};
 
-// 2. package.json ↔ LICENSE (BASE-REPO-004).
-if (pkg.license !== "UNLICENSED") fail(`package.json license phải là "UNLICENSED" (đang: ${pkg.license})`);
-if (has("LICENSE") && !/All rights reserved/i.test(read("LICENSE")))
-  fail("LICENSE thiếu câu 'All rights reserved'");
+// 2. package.json ↔ LICENSE (BASE-REPO-004): dự án mở mã theo MIT (chủ dự án chốt 2026-11-16).
+if (pkg.license !== "MIT") fail(`package.json license phải là "MIT" (đang: ${pkg.license})`);
+if (has("LICENSE") && !/^MIT License$/m.test(read("LICENSE"))) fail("LICENSE thiếu dòng 'MIT License'");
+if (has("LICENSE") && !/Permission is hereby granted, free of charge/.test(read("LICENSE")))
+  fail("LICENSE không phải văn bản MIT chuẩn");
 if (has("LICENSE") && !/^Copyright \(c\) 2026 /m.test(read("LICENSE")))
   fail("LICENSE thiếu dòng 'Copyright (c) 2026 …'");
 
