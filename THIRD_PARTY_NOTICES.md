@@ -61,7 +61,7 @@ Tổng: 94 thành phần.
 | @node-rs/argon2-win32-arm64-msvc | 2.2.2 | MIT |
 | @node-rs/argon2-win32-ia32-msvc | 2.2.2 | MIT |
 | @node-rs/argon2-win32-x64-msvc | 2.2.2 | MIT |
-| @playwright/test | 1.64.1 | Apache-2.0 |
+| @playwright/test | 1.65.1 | Apache-2.0 |
 | @swc/helpers | 0.5.23 | Apache-2.0 |
 | argparse | 3.0.3 | PSF-2.0 |
 | baseline-browser-mapping | 2.11.29 | Apache-2.0 |
@@ -83,8 +83,8 @@ Tổng: 94 thành phần.
 | pg-types | 2.2.0 | MIT |
 | pgpass | 1.0.5 | MIT |
 | picocolors | 1.1.1 | ISC |
-| playwright | 1.64.1 | Apache-2.0 |
-| playwright-core | 1.64.1 | Apache-2.0 |
+| playwright | 1.65.1 | Apache-2.0 |
+| playwright-core | 1.65.1 | Apache-2.0 |
 | postcss | 8.5.23 | MIT |
 | postgres-array | 2.0.0 | MIT |
 | postgres-bytea | 1.0.1 | MIT |
