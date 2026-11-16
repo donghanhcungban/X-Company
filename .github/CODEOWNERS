@@ -2,40 +2,40 @@
 # Dòng sau thắng dòng trước. Quy tắc: thêm đường dẫn mới chứa PII/auth/mật mã/cổng → thêm dòng ở đây trong cùng PR.
 
 # Mặc định
-*                       @seeker19110
+*                       @www-donghanhcungban-org
 
 # Auth, quyền, mật mã, bí mật
-/lib/identity/          @seeker19110
-/lib/authz/             @seeker19110
-/lib/auth/              @seeker19110
-/lib/crypto/            @seeker19110
-/lib/files/             @seeker19110
+/lib/identity/          @www-donghanhcungban-org
+/lib/authz/             @www-donghanhcungban-org
+/lib/auth/              @www-donghanhcungban-org
+/lib/crypto/            @www-donghanhcungban-org
+/lib/files/             @www-donghanhcungban-org
 
 # Dữ liệu và migration (PII nằm ở đây)
-/migrations/            @seeker19110
-/lib/db/                @seeker19110
-/lib/audit/             @seeker19110
-/lib/org/               @seeker19110
-/lib/attendance/        @seeker19110
-/lib/inquiry/           @seeker19110
-/docs/privacy/          @seeker19110
-/docs/compliance/       @seeker19110
-/docs/DPIA.md           @seeker19110
+/migrations/            @www-donghanhcungban-org
+/lib/db/                @www-donghanhcungban-org
+/lib/audit/             @www-donghanhcungban-org
+/lib/org/               @www-donghanhcungban-org
+/lib/attendance/        @www-donghanhcungban-org
+/lib/inquiry/           @www-donghanhcungban-org
+/docs/privacy/          @www-donghanhcungban-org
+/docs/compliance/       @www-donghanhcungban-org
+/docs/DPIA.md           @www-donghanhcungban-org
 
 # Cổng chất lượng, CI, hook, chỉ dẫn cho agent
-/.github/               @seeker19110
-/.claude/               @seeker19110
-/AGENTS.md              @seeker19110
-/CLAUDE.md              @seeker19110
-/xt.yaml                @seeker19110
-/eslint.config.*        @seeker19110
-/tsconfig*.json         @seeker19110
-/package.json           @seeker19110
-/package-lock.json      @seeker19110
+/.github/               @www-donghanhcungban-org
+/.claude/               @www-donghanhcungban-org
+/AGENTS.md              @www-donghanhcungban-org
+/CLAUDE.md              @www-donghanhcungban-org
+/xt.yaml                @www-donghanhcungban-org
+/eslint.config.*        @www-donghanhcungban-org
+/tsconfig*.json         @www-donghanhcungban-org
+/package.json           @www-donghanhcungban-org
+/package-lock.json      @www-donghanhcungban-org
 
 # Bảo mật và vận hành
-/SECURITY.md            @seeker19110
-/docs/THREAT-MODEL.md   @seeker19110
-/docs/ops/              @seeker19110
-/docs/security/         @seeker19110
-/public/.well-known/    @seeker19110
+/SECURITY.md            @www-donghanhcungban-org
+/docs/THREAT-MODEL.md   @www-donghanhcungban-org
+/docs/ops/              @www-donghanhcungban-org
+/docs/security/         @www-donghanhcungban-org
+/public/.well-known/    @www-donghanhcungban-org

@@ -42,10 +42,11 @@ for (const f of REQUIRED) if (!has(f)) fail(`thiếu ${f}`);
 const pkg = has("package.json") ? JSON.parse(read("package.json")) : { scripts: {} };
 const scripts = pkg.scripts ?? {};
 
-// 2. package.json ↔ LICENSE (BASE-REPO-004).
-if (pkg.license !== "UNLICENSED") fail(`package.json license phải là "UNLICENSED" (đang: ${pkg.license})`);
-if (has("LICENSE") && !/All rights reserved/i.test(read("LICENSE")))
-  fail("LICENSE thiếu câu 'All rights reserved'");
+// 2. package.json ↔ LICENSE (BASE-REPO-004): dự án mở mã theo MIT (chủ dự án chốt 2026-11-16).
+if (pkg.license !== "MIT") fail(`package.json license phải là "MIT" (đang: ${pkg.license})`);
+if (has("LICENSE") && !/^MIT License$/m.test(read("LICENSE"))) fail("LICENSE thiếu dòng 'MIT License'");
+if (has("LICENSE") && !/Permission is hereby granted, free of charge/.test(read("LICENSE")))
+  fail("LICENSE không phải văn bản MIT chuẩn");
 if (has("LICENSE") && !/^Copyright \(c\) 2026 /m.test(read("LICENSE")))
   fail("LICENSE thiếu dòng 'Copyright (c) 2026 …'");
 
@@ -146,7 +147,7 @@ if (has("CHANGELOG.md")) {
 }
 
 // 6. SECURITY.md + security.txt (BASE-SEC-009, XC-OSS-004, RFC 9116).
-const ADVISORY = "https://github.com/seeker19110/X-Company/security/advisories/new";
+const ADVISORY = "https://github.com/www-donghanhcungban-org/X-Company/security/advisories/new";
 if (has("SECURITY.md")) {
   const s = read("SECURITY.md");
   if (!s.includes(ADVISORY)) fail("SECURITY.md thiếu kênh GitHub Private Vulnerability Reporting");
@@ -196,7 +197,10 @@ if (has(".github/CODEOWNERS")) {
     "/lib/files/",
     "/docs/privacy/",
   ]) {
-    const re = new RegExp(`^${path.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+@seeker19110\\b`, "m");
+    const re = new RegExp(
+      `^${path.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+@www-donghanhcungban-org\\b`,
+      "m",
+    );
     if (!re.test(co)) fail(`CODEOWNERS thiếu dòng cho ${path}`);
   }
 }

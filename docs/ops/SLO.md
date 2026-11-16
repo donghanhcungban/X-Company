@@ -55,10 +55,10 @@ Burn rate đa cửa sổ (Google SRE Workbook): cảnh báo chỉ bắn khi cả
 
 | Rule | Điều kiện | Mức | Owner |
 |---|---|---|---|
-| `XCAvailabilityFastBurn` | lỗi 5xx > 14,4 × 0,001 trong 1h **và** 5m, giữ 2m | page | seeker19110 |
-| `XCAvailabilitySlowBurn` | lỗi 5xx > 6 × 0,001 trong 6h **và** 30m, giữ 15m | ticket | seeker19110 |
-| `XCAttendanceLatencyFastBurn` | tỷ lệ chậm > 6 × 0,05 trong 1h **và** 5m, giữ 5m | ticket | seeker19110 |
-| `XCOutboxDeadLetter` | `outbox_dead_total > 0` giữ 15m (BE-JOB-004) | ticket | seeker19110 |
+| `XCAvailabilityFastBurn` | lỗi 5xx > 14,4 × 0,001 trong 1h **và** 5m, giữ 2m | page | www-donghanhcungban-org |
+| `XCAvailabilitySlowBurn` | lỗi 5xx > 6 × 0,001 trong 6h **và** 30m, giữ 15m | ticket | www-donghanhcungban-org |
+| `XCAttendanceLatencyFastBurn` | tỷ lệ chậm > 6 × 0,05 trong 1h **và** 5m, giữ 5m | ticket | www-donghanhcungban-org |
+| `XCOutboxDeadLetter` | `outbox_dead_total > 0` giữ 15m (BE-JOB-004) | ticket | www-donghanhcungban-org |
 
 Mỗi rule có `severity`, `owner`, `runbook_url` (→ [RUNBOOK.md](RUNBOOK.md) mục 4 và "DLQ / redrive"); `npm run -s check:alerts` chặn rule thiếu các trường này. Đã chạy trên Prometheus/Alertmanager thật cục bộ (`npm run -s ops:stack:drill`, T-054; job CI `ops-stack`): `promtool check/test rules`, scrape `/api/metrics`, truy vấn SLI ở trên chạy được, cảnh báo tới webhook. Cấu hình triển khai mẫu: `ops/prometheus/prometheus.yml`, `ops/alertmanager/alertmanager.yml`. Hạ tầng giám sát production và kênh trực có người: việc của chủ dự án.
 

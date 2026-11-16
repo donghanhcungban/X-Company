@@ -12,5 +12,5 @@ X-Company là phần mềm nội bộ đang phát triển; chưa có cam kết h
 | Hành vi không phù hợp của người tham gia | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) |
 | Người dùng nội bộ gặp sự cố khi vận hành | Kênh nội bộ `<chủ dự án điền: kênh trực/hotline>`; quy trình ở [docs/ops/INCIDENT-RESPONSE.md](docs/ops/INCIDENT-RESPONSE.md) |
 
-Chủ dự án: [@seeker19110](https://github.com/seeker19110). Chúng tôi phản hồi theo khả năng, không đảm bảo thời hạn cho
+Chủ dự án: [@www-donghanhcungban-org](https://github.com/www-donghanhcungban-org). Chúng tôi phản hồi theo khả năng, không đảm bảo thời hạn cho
 câu hỏi chung; báo cáo bảo mật có cam kết riêng ở [SECURITY.md](SECURITY.md).

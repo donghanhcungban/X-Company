@@ -21,10 +21,10 @@ groups:
         for: 2m
         labels:
           severity: page
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Đốt ngân sách khả dụng nhanh (14,4x trong 1h và 5m)"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
       - alert: XCAvailabilitySlowBurn
         expr: |
           (
@@ -39,10 +39,10 @@ groups:
         for: 15m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Đốt ngân sách khả dụng chậm (6x trong 6h và 30m)"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
       # SLI-2 độ trễ ghi chấm công, SLO 95% ≤ 1 s → ngân sách 0,05.
       - alert: XCAttendanceLatencyFastBurn
         expr: |
@@ -58,10 +58,10 @@ groups:
         for: 5m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Đốt ngân sách độ trễ ghi chấm công (6x trong 1h và 5m)"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
   - name: x-company-jobs
     rules:
       # BE-JOB-004: DLQ > 0 quá 15 phút. Gauge vắng mặt (DB không đọc được) thì rule không bắn — availability bắt ca đó.
@@ -70,10 +70,10 @@ groups:
         for: 15m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Có việc outbox ở DLQ (status=dead) quá 15 phút"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#dlq--redrive"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#dlq--redrive"
   - name: x-company-rum
     rules:
       # RUM tự làm (T-056, D-042; PRF-WEB-005/008): p75 24 giờ theo trang từ rum_web_vitals_p75 (chỉ nhóm ≥ 5 mẫu; LCP/INP giây, CLS điểm).
@@ -83,25 +83,25 @@ groups:
         for: 30m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "LCP p75 > 2,5 s trên {{ $labels.page }} quá 30 phút"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
       - alert: XCRumInpSlow
         expr: rum_web_vitals_p75{metric="INP"} > 0.2
         for: 30m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "INP p75 > 0,2 s trên {{ $labels.page }} quá 30 phút"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
       - alert: XCRumClsHigh
         expr: rum_web_vitals_p75{metric="CLS"} > 0.1
         for: 30m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "CLS p75 > 0,1 trên {{ $labels.page }} quá 30 phút"
-          runbook_url: "https://github.com/seeker19110/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
+          runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"

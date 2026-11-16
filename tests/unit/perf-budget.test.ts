@@ -181,7 +181,9 @@ describe("rule cảnh báo Prometheus mẫu (OPS-SLO-001, BE-JOB-004)", () => {
   });
 
   test("thiếu severity/runbook_url/owner, metric lạ, thiếu DLQ → đỏ", () => {
-    const bad = text.replace(/severity: page/, "severity: sev9").replace(/owner: seeker19110/, "owner:");
+    const bad = text
+      .replace(/severity: page/, "severity: sev9")
+      .replace(/owner: www-donghanhcungban-org/, "owner:");
     assert.ok(checkAlerts(bad).some((e: string) => e.includes("severity")));
     assert.ok(checkAlerts(bad).some((e: string) => e.includes("owner")));
     assert.ok(

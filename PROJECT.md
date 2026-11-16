@@ -105,7 +105,7 @@ Next.js + React + TypeScript · PostgreSQL (SQL thuần qua `pg`) · `node:test`
 ## 9. Các bên
 | Vai trò | Tên | Quyết định gì |
 |---|---|---|
-| Chủ sản phẩm | seeker19110 | phạm vi, ngân sách, merge PR ngoại lệ cứng |
+| Chủ sản phẩm | www-donghanhcungban-org | phạm vi, ngân sách, merge PR ngoại lệ cứng |
 | HR / pháp chế | (chưa chỉ định) | quy tắc ca, DPIA, thời hạn lưu |
 
 ## 10. Khung pháp lý

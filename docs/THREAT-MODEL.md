@@ -3,7 +3,7 @@ title: THREAT-MODEL — X-Company
 kind: threat-model
 version: 4
 updated: 2026-10-21
-owner: seeker19110
+owner: www-donghanhcungban-org
 review: <chủ dự án/người phụ trách bảo mật duyệt — chưa duyệt>
 ---
 
