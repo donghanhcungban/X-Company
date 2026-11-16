@@ -197,7 +197,10 @@ if (has(".github/CODEOWNERS")) {
     "/lib/files/",
     "/docs/privacy/",
   ]) {
-    const re = new RegExp(`^${path.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+@seeker19110\\b`, "m");
+    const re = new RegExp(
+      `^${path.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+@www-donghanhcungban-org\\b`,
+      "m",
+    );
     if (!re.test(co)) fail(`CODEOWNERS thiếu dòng cho ${path}`);
   }
 }

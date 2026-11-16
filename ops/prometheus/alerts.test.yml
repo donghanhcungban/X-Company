@@ -21,7 +21,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: page
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Đốt ngân sách khả dụng nhanh (14,4x trong 1h và 5m)"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -34,7 +34,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: page
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Đốt ngân sách khả dụng nhanh (14,4x trong 1h và 5m)"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -52,7 +52,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Đốt ngân sách khả dụng chậm (6x trong 6h và 30m)"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -68,7 +68,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Đốt ngân sách khả dụng chậm (6x trong 6h và 30m)"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -116,7 +116,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Đốt ngân sách độ trễ ghi chấm công (6x trong 1h và 5m)"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -129,7 +129,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Đốt ngân sách độ trễ ghi chấm công (6x trong 1h và 5m)"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -165,7 +165,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
             exp_annotations:
               summary: "Có việc outbox ở DLQ (status=dead) quá 15 phút"
               runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#dlq--redrive"
@@ -188,7 +188,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
               page: "/"
               metric: LCP
             exp_annotations:
@@ -220,7 +220,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
               page: "/"
               metric: INP
             exp_annotations:
@@ -252,7 +252,7 @@ tests:
         exp_alerts:
           - exp_labels:
               severity: ticket
-              owner: seeker19110
+              owner: www-donghanhcungban-org
               page: "/"
               metric: CLS
             exp_annotations:

@@ -1,12 +1,12 @@
 ---
 title: RUNBOOK — X-Company
 updated: 2026-10-18
-owner: seeker19110
+owner: www-donghanhcungban-org
 last_drilled: chưa diễn tập
 status: nháp — chưa có môi trường production thật; lệnh PM2/psql là mẫu chưa chạy trên hạ tầng thật
 ---
 
-# RUNBOOK — X-Company · cập nhật 2026-10-18 · chủ: seeker19110
+# RUNBOOK — X-Company · cập nhật 2026-10-18 · chủ: www-donghanhcungban-org
 
 > Luật: mọi bước là lệnh chép-chạy được; **không ghi giá trị bí mật** (chỉ ghi nơi lấy). Chỗ cần người điền: `<chủ dự án điền>`.
 > `last_drilled: chưa diễn tập` — chưa có bước nào ở đây đã chạy trên production; diễn tập đầu tiên do người **không phải tác giả** thực hiện (OPS-DR-008), ghi tên và ngày vào bảng cuối tài liệu. Quá 6 tháng kể từ `last_drilled` thì `npm run -s check:docs` cảnh báo/đỏ.
@@ -21,7 +21,7 @@ status: nháp — chưa có môi trường production thật; lệnh PM2/psql l�
 | Dashboard / log / trace | chưa có — dự kiến T-026/T-038 (log JSON, metric); tạm: `pm2 logs` |
 | Kho bí mật | `<chủ dự án điền: tên kho/đường dẫn>` — KHÔNG ghi giá trị ở đây; biến môi trường mẫu ở `.env.example` |
 | Trang trạng thái / kênh người dùng | `<chủ dự án điền>` |
-| Người trực | `<chủ dự án điền: tên, kênh liên lạc>` — mặc định chủ dự án (@seeker19110) |
+| Người trực | `<chủ dự án điền: tên, kênh liên lạc>` — mặc định chủ dự án (@www-donghanhcungban-org) |
 
 Biến môi trường mà mã đọc (tên thật trong mã; giá trị không ghi ở đây): `DATABASE_URL` (ứng dụng, role không phải owner) · `MIGRATE_DATABASE_URL` (chỉ migration, role owner) ·
 `SESSION_SECRET` (≥ 32 byte) · `QR_SIGNING_KEYS` (`kid1:khoá1,kid2:khoá2`; kid đầu dùng để ký) · `APP_ORIGIN` (production **phải `https://`**; `http` chỉ nhận cho localhost/127.0.0.1/[::1] của harness) · `TRUST_PROXY` hoặc `TRUST_PROXY_HOPS` (production **bắt buộc khai một trong hai**, `0` = không có proxy; thiếu thì khởi động thất bại) ·
@@ -304,12 +304,12 @@ Các hàng `(chưa có)` bên dưới là cảnh báo chưa có rule mẫu.
 |---|---|---|---|
 | Diễn tập khôi phục DB và tệp | quý (đầu tiên: trước pilot) | [restore-db.md](runbooks/restore-db.md); tự động: `npm run -s backup:drill` | `<chủ dự án điền>` |
 | Sao lưu DB | hằng ngày | `npm run -s backup` (cron — chưa cấu hình trên máy chủ thật) | `<chủ dự án điền>` |
-| Thử kích hoạt cảnh báo | sau mỗi lần đổi `docs/ops/alerts.json` | `npm run -s alerts:drill` ([alert-drills.md](alert-drills.md)) | seeker19110 |
-| Vá phụ thuộc / quét lỗ hổng | tuần | Dependabot PR + `dep-audit` (xem [VULN-SLA.md](VULN-SLA.md)) | seeker19110 |
+| Thử kích hoạt cảnh báo | sau mỗi lần đổi `docs/ops/alerts.json` | `npm run -s alerts:drill` ([alert-drills.md](alert-drills.md)) | www-donghanhcungban-org |
+| Vá phụ thuộc / quét lỗ hổng | tuần | Dependabot PR + `dep-audit` (xem [VULN-SLA.md](VULN-SLA.md)) | www-donghanhcungban-org |
 | Kiểm chuỗi audit | tuần | `npm run audit:verify` | `<chủ dự án điền>` |
-| Xoay bí mật | `<chủ dự án điền>` (đề xuất 90 ngày hoặc khi có người rời dự án) | mục 2 | seeker19110 |
+| Xoay bí mật | `<chủ dự án điền>` (đề xuất 90 ngày hoặc khi có người rời dự án) | mục 2 | www-donghanhcungban-org |
 | Gia hạn domain/chứng chỉ/license | xem [../handover/renewals.md](../handover/renewals.md) | | |
-| Gia hạn `public/.well-known/security.txt` | trước `Expires` (hiện 2027-04-18) | sửa tệp + PR | seeker19110 |
+| Gia hạn `public/.well-known/security.txt` | trước `Expires` (hiện 2027-04-18) | sửa tệp + PR | www-donghanhcungban-org |
 | Diễn tập tabletop rò rỉ dữ liệu | năm | [runbooks/data-breach.md](runbooks/data-breach.md) | `<chủ dự án điền>` |
 
 ## 6. Nhật ký diễn tập

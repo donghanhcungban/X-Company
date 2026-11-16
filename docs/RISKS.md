@@ -1,7 +1,7 @@
 ---
 title: Sổ rủi ro và phụ thuộc — X-Company
 updated: 2026-10-18
-owner: seeker19110
+owner: www-donghanhcungban-org
 ---
 
 # Sổ rủi ro (PM-RISK-001) và thẩm định phụ thuộc (PM-RISK-006)
@@ -12,10 +12,10 @@ owner: seeker19110
 ## Rủi ro
 | ID | Mô tả | Xác suất | Ảnh hưởng | Chủ | Cách ứng xử | Biện pháp | Trigger | Trạng thái | Ngày rà |
 |---|---|---|---|---|---|---|---|---|---|
-| RK-001 | Quy tắc ca/OT/nghỉ của công ty chưa được HR chốt (F02): giá trị ⚙ mặc định có thể lệch quy định nội bộ hoặc Bộ luật Lao động | Cao | Cao | seeker19110 (HR chốt giá trị: chưa chỉ định) | mitigate | giá trị ⚙ là cấu hình có ngày hiệu lực (D-007), kỳ đã khoá giữ `policy_version_id` cũ; bộ ví dụ vào/ra của HR thành test; pháp chế xác nhận hạn mức OT | HR cung cấp ví dụ cho kết quả khác `computeShift`; HR đổi quy tắc khi kỳ đã khoá | mở — giá trị mặc định theo luật đã cài (T-044, D-031: `lib/attendance/labor-rules.ts`, cấu hình có ngày hiệu lực; trần OT chặn 422), chờ HR chốt nội quy chặt hơn và luật sư xác nhận NĐ 145/2020 | 2026-10-19 |
-| RK-002 | GPS/QR kém tin cậy ở hiện trường (vị trí giả, QR chụp lại, tín hiệu yếu công trường) | TB | Cao | seeker19110 | mitigate | QR ký HMAC TTL 60 s + ca + địa điểm là chính; GPS chỉ là tín hiệu đối soát và tắt mặc định tới khi có DPIA; thử tại địa điểm thật (Q02); ngoại lệ vào `needs_review` | tỷ lệ `needs_review` trong pilot vượt `<chủ dự án điền ngưỡng>`; nhân viên báo không quét được | mở — chờ thử hiện trường | 2026-10-18 |
-| RK-003 | Nợ mang theo khi chép có chọn lọc hạ tầng từ XBOSS (auth, DB, audit, CI) | TB | TB | seeker19110 | mitigate | mỗi phần chép có test riêng và ghi nguồn `xboss@<commit>:<file>` trong commit (D-001, ADR-0001); review từng phần | lỗi/lỗ hổng truy về phần chép; XBOSS sửa lỗi phần đã chép | đang theo dõi | 2026-10-18 |
-| RK-004 | Khối lượng P0 lớn hơn thời gian/ngân sách một phiên tự động (hạn mong muốn 2026-10-20) | Cao | TB | seeker19110 | mitigate | lát xếp theo rủi ro (nền → quyền/audit → nghiệp vụ); phần chưa xong ghi rõ ở báo cáo/`loop defer`; cắt lát cuối về backlog, không hạ cổng | còn task chưa xong khi gần ngân sách token hoặc hạn | mở | 2026-10-18 |
+| RK-001 | Quy tắc ca/OT/nghỉ của công ty chưa được HR chốt (F02): giá trị ⚙ mặc định có thể lệch quy định nội bộ hoặc Bộ luật Lao động | Cao | Cao | www-donghanhcungban-org (HR chốt giá trị: chưa chỉ định) | mitigate | giá trị ⚙ là cấu hình có ngày hiệu lực (D-007), kỳ đã khoá giữ `policy_version_id` cũ; bộ ví dụ vào/ra của HR thành test; pháp chế xác nhận hạn mức OT | HR cung cấp ví dụ cho kết quả khác `computeShift`; HR đổi quy tắc khi kỳ đã khoá | mở — giá trị mặc định theo luật đã cài (T-044, D-031: `lib/attendance/labor-rules.ts`, cấu hình có ngày hiệu lực; trần OT chặn 422), chờ HR chốt nội quy chặt hơn và luật sư xác nhận NĐ 145/2020 | 2026-10-19 |
+| RK-002 | GPS/QR kém tin cậy ở hiện trường (vị trí giả, QR chụp lại, tín hiệu yếu công trường) | TB | Cao | www-donghanhcungban-org | mitigate | QR ký HMAC TTL 60 s + ca + địa điểm là chính; GPS chỉ là tín hiệu đối soát và tắt mặc định tới khi có DPIA; thử tại địa điểm thật (Q02); ngoại lệ vào `needs_review` | tỷ lệ `needs_review` trong pilot vượt `<chủ dự án điền ngưỡng>`; nhân viên báo không quét được | mở — chờ thử hiện trường | 2026-10-18 |
+| RK-003 | Nợ mang theo khi chép có chọn lọc hạ tầng từ XBOSS (auth, DB, audit, CI) | TB | TB | www-donghanhcungban-org | mitigate | mỗi phần chép có test riêng và ghi nguồn `xboss@<commit>:<file>` trong commit (D-001, ADR-0001); review từng phần | lỗi/lỗ hổng truy về phần chép; XBOSS sửa lỗi phần đã chép | đang theo dõi | 2026-10-18 |
+| RK-004 | Khối lượng P0 lớn hơn thời gian/ngân sách một phiên tự động (hạn mong muốn 2026-10-20) | Cao | TB | www-donghanhcungban-org | mitigate | lát xếp theo rủi ro (nền → quyền/audit → nghiệp vụ); phần chưa xong ghi rõ ở báo cáo/`loop defer`; cắt lát cuối về backlog, không hạ cổng | còn task chưa xong khi gần ngân sách token hoặc hạn | mở | 2026-10-18 |
 
 ## Phụ thuộc quan trọng (thẩm định)
 EOL tra <https://endoflife.date/api/> ngày 2026-10-18; license lấy từ `package.json` của gói đã cài. OSI = giấy phép được Open Source Initiative duyệt.

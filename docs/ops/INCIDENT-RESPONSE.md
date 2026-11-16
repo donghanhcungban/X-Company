@@ -1,7 +1,7 @@
 ---
 title: Ứng phó sự cố — X-Company
 updated: 2026-10-18
-owner: seeker19110
+owner: www-donghanhcungban-org
 ---
 
 # Ứng phó sự cố (OPS-IR-001/004/006/010)
@@ -9,7 +9,7 @@ owner: seeker19110
 > Thời gian phản ứng bên dưới là **số đề xuất**, chủ dự án chốt; chưa có trực 24/7 (`<chủ dự án điền: người trực, kênh>`). Runbook lệnh: [RUNBOOK.md](RUNBOOK.md). Mẫu post-mortem: [incidents/README.md](incidents/README.md).
 
 ## 1. Mức sự cố
-Ai được tuyên bố: bất kỳ ai phát hiện có thể tuyên bố tạm một mức; **người chỉ huy sự cố** (mặc định chủ dự án @seeker19110, hoặc người trực `<chủ dự án điền>`) xác nhận/đổi mức.
+Ai được tuyên bố: bất kỳ ai phát hiện có thể tuyên bố tạm một mức; **người chỉ huy sự cố** (mặc định chủ dự án @www-donghanhcungban-org, hoặc người trực `<chủ dự án điền>`) xác nhận/đổi mức.
 
 | Mức | Định nghĩa | Ví dụ của dự án (≥ 2) | Xác nhận | Giảm thiệt hại |
 |---|---|---|---|---|

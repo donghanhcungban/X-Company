@@ -21,7 +21,7 @@ groups:
         for: 2m
         labels:
           severity: page
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Đốt ngân sách khả dụng nhanh (14,4x trong 1h và 5m)"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -39,7 +39,7 @@ groups:
         for: 15m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Đốt ngân sách khả dụng chậm (6x trong 6h và 30m)"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -58,7 +58,7 @@ groups:
         for: 5m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Đốt ngân sách độ trễ ghi chấm công (6x trong 1h và 5m)"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#4-cảnh-báo--playbook"
@@ -70,7 +70,7 @@ groups:
         for: 15m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "Có việc outbox ở DLQ (status=dead) quá 15 phút"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#dlq--redrive"
@@ -83,7 +83,7 @@ groups:
         for: 30m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "LCP p75 > 2,5 s trên {{ $labels.page }} quá 30 phút"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
@@ -92,7 +92,7 @@ groups:
         for: 30m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "INP p75 > 0,2 s trên {{ $labels.page }} quá 30 phút"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"
@@ -101,7 +101,7 @@ groups:
         for: 30m
         labels:
           severity: ticket
-          owner: seeker19110
+          owner: www-donghanhcungban-org
         annotations:
           summary: "CLS p75 > 0,1 trên {{ $labels.page }} quá 30 phút"
           runbook_url: "https://github.com/www-donghanhcungban-org/X-Company/blob/main/docs/ops/RUNBOOK.md#rum--chỉ-số-web"

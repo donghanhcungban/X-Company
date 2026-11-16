@@ -1,7 +1,7 @@
 # Đóng góp cho X-Company
 
 Cảm ơn bạn đã quan tâm. Dự án mở mã theo giấy phép MIT (xem [LICENSE](LICENSE)); phần đóng góp được cấp phép theo cùng
-giấy phép. Đóng góp từ bên ngoài nên mở issue trao đổi trước với chủ dự án [@seeker19110](https://github.com/seeker19110). Mọi người tham gia theo [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+giấy phép. Đóng góp từ bên ngoài nên mở issue trao đổi trước với chủ dự án [@www-donghanhcungban-org](https://github.com/www-donghanhcungban-org). Mọi người tham gia theo [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 **Lỗ hổng bảo mật: không mở issue/PR công khai** — theo [SECURITY.md](SECURITY.md).
 
 ## Trước khi bắt đầu

@@ -67,7 +67,7 @@ Cách đặt, xoay và xử lý khi lộ bí mật: [docs/ops/RUNBOOK.md](docs/o
 
 Đọc [CONTRIBUTING.md](CONTRIBUTING.md) (nhánh, Conventional Commits, squash merge, cổng) và
 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Câu hỏi: [SUPPORT.md](SUPPORT.md). **Lỗ hổng bảo mật: không mở issue công khai** —
-báo riêng theo [SECURITY.md](SECURITY.md). Chủ dự án: [@seeker19110](https://github.com/seeker19110).
+báo riêng theo [SECURITY.md](SECURITY.md). Chủ dự án: [@www-donghanhcungban-org](https://github.com/www-donghanhcungban-org).
 
 ## Ủng hộ và liên hệ
 
