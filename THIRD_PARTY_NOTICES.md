@@ -38,15 +38,15 @@ Tổng: 94 thành phần.
 | @img/sharp-win32-arm64 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later |
 | @img/sharp-win32-ia32 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later |
 | @img/sharp-win32-x64 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later |
-| @next/env | 16.4.3 | MIT |
-| @next/swc-darwin-arm64 | 16.4.3 | MIT |
-| @next/swc-darwin-x64 | 16.4.3 | MIT |
-| @next/swc-linux-arm64-gnu | 16.4.3 | MIT |
-| @next/swc-linux-arm64-musl | 16.4.3 | MIT |
-| @next/swc-linux-x64-gnu | 16.4.3 | MIT |
-| @next/swc-linux-x64-musl | 16.4.3 | MIT |
-| @next/swc-win32-arm64-msvc | 16.4.3 | MIT |
-| @next/swc-win32-x64-msvc | 16.4.3 | MIT |
+| @next/env | 16.4.6 | MIT |
+| @next/swc-darwin-arm64 | 16.4.6 | MIT |
+| @next/swc-darwin-x64 | 16.4.6 | MIT |
+| @next/swc-linux-arm64-gnu | 16.4.6 | MIT |
+| @next/swc-linux-arm64-musl | 16.4.6 | MIT |
+| @next/swc-linux-x64-gnu | 16.4.6 | MIT |
+| @next/swc-linux-x64-musl | 16.4.6 | MIT |
+| @next/swc-win32-arm64-msvc | 16.4.6 | MIT |
+| @next/swc-win32-x64-msvc | 16.4.6 | MIT |
 | @node-rs/argon2 | 2.2.2 | MIT |
 | @node-rs/argon2-android-arm-eabi | 2.2.2 | MIT |
 | @node-rs/argon2-android-arm64 | 2.2.2 | MIT |
@@ -61,7 +61,7 @@ Tổng: 94 thành phần.
 | @node-rs/argon2-win32-arm64-msvc | 2.2.2 | MIT |
 | @node-rs/argon2-win32-ia32-msvc | 2.2.2 | MIT |
 | @node-rs/argon2-win32-x64-msvc | 2.2.2 | MIT |
-| @playwright/test | 1.64.1 | Apache-2.0 |
+| @playwright/test | 1.65.1 | Apache-2.0 |
 | @swc/helpers | 0.5.23 | Apache-2.0 |
 | argparse | 3.0.3 | PSF-2.0 |
 | baseline-browser-mapping | 2.11.29 | Apache-2.0 |
@@ -73,7 +73,7 @@ Tổng: 94 thành phần.
 | markdown-it | 15.0.3 | MIT |
 | mdurl | 2.1.0 | MIT |
 | nanoid | 3.3.20 | MIT |
-| next | 16.4.3 | MIT |
+| next | 16.4.6 | MIT |
 | pg | 8.23.1 | MIT |
 | pg-cloudflare | 1.4.1 | MIT |
 | pg-connection-string | 2.14.1 | MIT |
@@ -83,8 +83,8 @@ Tổng: 94 thành phần.
 | pg-types | 2.2.0 | MIT |
 | pgpass | 1.0.5 | MIT |
 | picocolors | 1.1.1 | ISC |
-| playwright | 1.64.1 | Apache-2.0 |
-| playwright-core | 1.64.1 | Apache-2.0 |
+| playwright | 1.65.1 | Apache-2.0 |
+| playwright-core | 1.65.1 | Apache-2.0 |
 | postcss | 8.5.23 | MIT |
 | postgres-array | 2.0.0 | MIT |
 | postgres-bytea | 1.0.1 | MIT |

@@ -1,6 +1,6 @@
 ---
 title: Sổ rủi ro và phụ thuộc — X-Company
-updated: 2026-10-18
+updated: 2026-11-16
 owner: www-donghanhcungban-org
 ---
 
@@ -23,14 +23,14 @@ Telemetry: mặc định của sản phẩm; "không" nghĩa là không thấy c
 
 | Phụ thuộc | Phiên bản | License (OSI?) | EOL / hỗ trợ | Telemetry mặc định | Cách thoát / xuất dữ liệu |
 |---|---|---|---|---|---|
-| Next.js | 16.4.2 | MIT (OSI) | chu kỳ 16: chưa công bố EOL (LTS, phát hành 2025-10-22) | **Có** — gửi dữ liệu sử dụng ẩn danh; tắt bằng `NEXT_TELEMETRY_DISABLED=1` (CI đã đặt; máy dev/production phải đặt) hoặc `npx next telemetry disable` | `lib/` không import `next/*` (luật ESLint) nên nghiệp vụ mang đi được; viết lại `app/` và `proxy.ts` sang framework khác — chi phí cao |
+| Next.js | 16.4.6 | MIT (OSI) | chu kỳ 16: chưa công bố EOL (LTS, phát hành 2025-10-22) | **Có** — gửi dữ liệu sử dụng ẩn danh; tắt bằng `NEXT_TELEMETRY_DISABLED=1` (CI đã đặt; máy dev/production phải đặt) hoặc `npx next telemetry disable` | `lib/` không import `next/*` (luật ESLint) nên nghiệp vụ mang đi được; viết lại `app/` và `proxy.ts` sang framework khác — chi phí cao |
 | React / React DOM | 19.3.1 | MIT (OSI) | chu kỳ 19: chưa công bố EOL | không | gắn chặt với giao diện; thoát = viết lại giao diện (chấp nhận rủi ro) |
 | pg (node-postgres) | 8.23.1 | MIT (OSI) | không có lịch EOL trên endoflife.date; theo dõi bản mới qua Dependabot | không | chỉ `lib/db` chạm trực tiếp; thay driver cùng giao diện truy vấn |
 | PostgreSQL | 17 | PostgreSQL License (OSI) | 2029-11-08 (endoflife.date) | không | `pg_dump`/`pg_restore` chuẩn; mã chỉ dùng tính năng có từ bản 16 nên chạy được 16–18 |
 | @node-rs/argon2 | 2.2.2 | MIT (OSI) | không có lịch EOL; binary dựng sẵn theo nền tảng | không | mật khẩu lưu chuỗi PHC → đổi thuật toán/thư viện, nâng cấp dần khi đăng nhập (D-003) |
 | markdown-it | 14.3.3 | MIT (OSI) | không có lịch EOL; theo dõi bản mới | không | nội dung CMS lưu Markdown thuần → thay bộ render ở `lib/cms/markdown.ts`, giữ quy tắc không HTML thô |
 | zod | 4.6.7 | MIT (OSI) | không có lịch EOL; theo dõi bản mới | không | schema ở biên API; thay bằng thư viện khác phải viết lại schema (đã gom ở `lib/`) |
-| Playwright (`@playwright/test`) | 1.64.1 | Apache-2.0 (OSI) | không có lịch EOL; theo dõi bản mới | không cơ chế gửi dữ liệu dùng ra ngoài được nêu (chưa xác minh bằng bắt gói) | chỉ dùng cho E2E; thay công cụ E2E không ảnh hưởng sản phẩm |
+| Playwright (`@playwright/test`) | 1.65.1 | Apache-2.0 (OSI) | không có lịch EOL; theo dõi bản mới | không cơ chế gửi dữ liệu dùng ra ngoài được nêu (chưa xác minh bằng bắt gói) | chỉ dùng cho E2E; thay công cụ E2E không ảnh hưởng sản phẩm |
 
 Bảng cập nhật khi thêm/nâng phụ thuộc lõi (đã có Dependabot hằng tuần và `dep-audit`; xem `docs/ops/VULN-SLA.md`). Danh sách license đầy đủ cho mọi phụ thuộc gián tiếp: `<chưa có — thuộc task chuỗi cung ứng T-037>`.
 
