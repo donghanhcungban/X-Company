@@ -1,6 +1,6 @@
 ---
 title: Sổ rủi ro và phụ thuộc — X-Company
-updated: 2026-10-18
+updated: 2026-11-16
 owner: www-donghanhcungban-org
 ---
 
@@ -23,7 +23,7 @@ Telemetry: mặc định của sản phẩm; "không" nghĩa là không thấy c
 
 | Phụ thuộc | Phiên bản | License (OSI?) | EOL / hỗ trợ | Telemetry mặc định | Cách thoát / xuất dữ liệu |
 |---|---|---|---|---|---|
-| Next.js | 16.4.2 | MIT (OSI) | chu kỳ 16: chưa công bố EOL (LTS, phát hành 2025-10-22) | **Có** — gửi dữ liệu sử dụng ẩn danh; tắt bằng `NEXT_TELEMETRY_DISABLED=1` (CI đã đặt; máy dev/production phải đặt) hoặc `npx next telemetry disable` | `lib/` không import `next/*` (luật ESLint) nên nghiệp vụ mang đi được; viết lại `app/` và `proxy.ts` sang framework khác — chi phí cao |
+| Next.js | 16.4.6 | MIT (OSI) | chu kỳ 16: chưa công bố EOL (LTS, phát hành 2025-10-22) | **Có** — gửi dữ liệu sử dụng ẩn danh; tắt bằng `NEXT_TELEMETRY_DISABLED=1` (CI đã đặt; máy dev/production phải đặt) hoặc `npx next telemetry disable` | `lib/` không import `next/*` (luật ESLint) nên nghiệp vụ mang đi được; viết lại `app/` và `proxy.ts` sang framework khác — chi phí cao |
 | React / React DOM | 19.3.1 | MIT (OSI) | chu kỳ 19: chưa công bố EOL | không | gắn chặt với giao diện; thoát = viết lại giao diện (chấp nhận rủi ro) |
 | pg (node-postgres) | 8.23.1 | MIT (OSI) | không có lịch EOL trên endoflife.date; theo dõi bản mới qua Dependabot | không | chỉ `lib/db` chạm trực tiếp; thay driver cùng giao diện truy vấn |
 | PostgreSQL | 17 | PostgreSQL License (OSI) | 2029-11-08 (endoflife.date) | không | `pg_dump`/`pg_restore` chuẩn; mã chỉ dùng tính năng có từ bản 16 nên chạy được 16–18 |
