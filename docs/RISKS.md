@@ -30,7 +30,7 @@ Telemetry: mặc định của sản phẩm; "không" nghĩa là không thấy c
 | @node-rs/argon2 | 2.2.2 | MIT (OSI) | không có lịch EOL; binary dựng sẵn theo nền tảng | không | mật khẩu lưu chuỗi PHC → đổi thuật toán/thư viện, nâng cấp dần khi đăng nhập (D-003) |
 | markdown-it | 14.3.3 | MIT (OSI) | không có lịch EOL; theo dõi bản mới | không | nội dung CMS lưu Markdown thuần → thay bộ render ở `lib/cms/markdown.ts`, giữ quy tắc không HTML thô |
 | zod | 4.6.7 | MIT (OSI) | không có lịch EOL; theo dõi bản mới | không | schema ở biên API; thay bằng thư viện khác phải viết lại schema (đã gom ở `lib/`) |
-| Playwright (`@playwright/test`) | 1.64.1 | Apache-2.0 (OSI) | không có lịch EOL; theo dõi bản mới | không cơ chế gửi dữ liệu dùng ra ngoài được nêu (chưa xác minh bằng bắt gói) | chỉ dùng cho E2E; thay công cụ E2E không ảnh hưởng sản phẩm |
+| Playwright (`@playwright/test`) | 1.65.1 | Apache-2.0 (OSI) | không có lịch EOL; theo dõi bản mới | không cơ chế gửi dữ liệu dùng ra ngoài được nêu (chưa xác minh bằng bắt gói) | chỉ dùng cho E2E; thay công cụ E2E không ảnh hưởng sản phẩm |
 
 Bảng cập nhật khi thêm/nâng phụ thuộc lõi (đã có Dependabot hằng tuần và `dep-audit`; xem `docs/ops/VULN-SLA.md`). Danh sách license đầy đủ cho mọi phụ thuộc gián tiếp: `<chưa có — thuộc task chuỗi cung ứng T-037>`.
 
