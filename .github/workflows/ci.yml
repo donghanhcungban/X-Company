@@ -38,6 +38,10 @@ jobs:
         with:
           node-version-file: .nvmrc # BASE-DEP-003, PRF-WEB-010: một nguồn phiên bản runtime
           cache: npm
+      # Khung X-Templates ≥ 3.34 chạy bằng CPython 3.15.x (ADR-0078): `dev-task.sh`/`xt.py` thoát nếu `python3` sai phiên bản.
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.15.2"
       - name: Cài phụ thuộc theo lockfile
         run: npm ci
       # Bước GHI tệp đã commit đứng riêng, TRƯỚC khi chạy song song: `check:supply-chain` (so notices) và `prettier --check`
@@ -191,6 +195,10 @@ jobs:
         with:
           node-version-file: .nvmrc # BASE-DEP-003, PRF-WEB-010: một nguồn phiên bản runtime
           cache: npm
+      # tests/unit/check-docs.test.ts chạy `check:docs`, gọi `python3 xt.py blueprint-status` — khung ≥ 3.34 cần CPython 3.15.x (ADR-0078).
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.15.2"
       - name: Cài phụ thuộc theo lockfile
         run: npm ci
       - name: Cài postgresql-client-17 (khớp máy chủ)
@@ -272,6 +280,10 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
+      # `npm test` của README gồm test check:docs gọi `python3 xt.py` — khung ≥ 3.34 cần CPython 3.15.x (ADR-0078).
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.15.2"
       - name: PostgreSQL của runner vào PATH (initdb/pg_ctl cho scripts/with-test-db.sh)
         run: echo "$(ls -d /usr/lib/postgresql/*/bin | sort -V | tail -1)" >> "$GITHUB_PATH"
       # `npm test` của README gồm test KMS/off-site chạy nhị phân thật (không skip): cài bản ghim sha256 như job quality.
