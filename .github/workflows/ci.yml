@@ -38,6 +38,10 @@ jobs:
         with:
           node-version-file: .nvmrc # BASE-DEP-003, PRF-WEB-010: một nguồn phiên bản runtime
           cache: npm
+      # Khung X-Templates ≥ 3.34 chạy bằng CPython 3.15.x (ADR-0078): `dev-task.sh`/`xt.py` thoát nếu `python3` sai phiên bản.
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.15.2"
       - name: Cài phụ thuộc theo lockfile
         run: npm ci
       # Bước GHI tệp đã commit đứng riêng, TRƯỚC khi chạy song song: `check:supply-chain` (so notices) và `prettier --check`
