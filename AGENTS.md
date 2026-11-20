@@ -70,3 +70,11 @@ migrate: npm run -s db:migrate
 Cổng trước commit: `.xtemplates/scripts/dev-task.sh gate`. Kiểm tài liệu: `npm run -s check:repo-docs` · `npm run -s check:docs`.
 
 Hướng dẫn này không thay cho hook/permission — máy kiểm mới là hàng rào.
+
+## /factory
+
+Dùng `/factory <yêu cầu>` để mở hoặc tiếp tục một vòng sản phẩm. Đọc trạng thái bằng
+`python3 .xtemplates/scripts/xt_flow.py --json` rồi chạy các cổng của dự án.
+Trong lúc sửa giao diện, dùng `npm run dev`. Để chạy lại test khi lưu, dùng
+`npm run test:file -- --watch tests/unit/fixture-phone.test.ts`, thay đường dẫn theo phần đang sửa.
+Lệnh này dùng cùng bộ chuẩn bị PostgreSQL của dự án như khi chạy test từng file.
